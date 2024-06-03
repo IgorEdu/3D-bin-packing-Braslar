@@ -527,9 +527,9 @@ function loadResult(packagesToLoad, packagesLoaded) {
     //fill the result
     for (const obj in result) {
         let id = "<span class='result-text'><b>Id</b><span>" + result[obj].id + "</span></span>";
-        let label = "<span class='result-text'><b>Label</b><span>" + result[obj].label + "</span></span>";
-        let loaded = "<span class='result-text'><b>Loaded</b><span>" + result[obj].loaded + "</span></span>";
-        let unloaded = "<span class='result-text'><b>Unloaded</b><span>" + result[obj].unloaded + "</span></span>";
+        let label = "<span class='result-text'><b>Descrição</b><span>" + result[obj].label + "</span></span>";
+        let loaded = "<span class='result-text'><b>Carregado</b><span>" + result[obj].loaded + "</span></span>";
+        let unloaded = "<span class='result-text'><b>Não carregado</b><span>" + result[obj].unloaded + "</span></span>";
         $("#result").append("<div class='result-detail'>" + id + label + loaded + unloaded + "</div>")
     }
 

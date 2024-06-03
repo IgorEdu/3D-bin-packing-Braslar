@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 # ENTRYPOINT ["nginx","-g","daemon off;"]
 
-ENTRYPOINT [ "npm", "run", "preview" ]
+ENTRYPOINT [ "npm", "run", "dev", "--", "--host" ]

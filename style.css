@@ -192,7 +192,7 @@ a {
   transition: .3s ease-in-out;
 }
 
-.formContainer .formContainerContentOpen {
+.formContainer .result-detail {
   height: 100%;
   padding: 30px 10px 0 10px;
   overflow: hidden;
@@ -201,9 +201,13 @@ a {
 
 .formContainer .formContainerContentClose {
   height: 0px;
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 0px 10px;
   overflow: hidden;
   transition: .3s ease;
+}
+
+.formContainer .formContainerContentOpen{
+  padding: 20px 0px;
 }
 
 .packInfo {
@@ -211,7 +215,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4px 0;
+  margin: 5px 0;
 }
 
 .packInfo-numbers {

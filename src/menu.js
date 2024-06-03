@@ -94,11 +94,11 @@ $(document).ready(function () {
                         <div class="sub-content" id="advOptionsPrio${id}">
                             <div class="sub-content-inputs">
                                 <div>
-                                    <p class="inputLabel">Quantity</p>
+                                    <p class="inputLabel">Quantidade</p>
                                     <input type="number" min="1" max="${val}" value="${val}" class="sub-q input">
                                 </div>
                                 <div>
-                                    <p class="inputLabel">Priority</p>
+                                    <p class="inputLabel">Prioridade</p>
                                     <select class="pack_priorities sub-prio input" required></select>
                                 </div>
                             </div>
