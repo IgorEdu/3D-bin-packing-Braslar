@@ -274,6 +274,159 @@ $(document).ready(function () {
         containerCreated = true;
     });
 
+    $("#itensPreConfig").change(function(event) {
+        const selectedValue = event.target.value;
+
+        switch (selectedValue) {
+            case "":
+                $("#packLabel").val("");
+                $("#packWidth").val("");
+                $("#packHeight").val("");
+                $("#packLenght").val("");
+                $("#packQuantity").val("");
+                break;
+            case "1":
+                $("#packLabel").val("SIRIUS 4B");
+                $("#packWidth").val(0.523);
+                $("#packHeight").val(0.723);
+                $("#packLenght").val(0.478);
+                break;
+            case "2":
+                $("#packLabel").val("SIRIUS 5B");
+                $("#packWidth").val(0.548);
+                $("#packHeight").val(0.732);
+                $("#packLenght").val(0.713);
+                break;
+            case "3":
+                $("#packLabel").val("FENIX 4B PLUS");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.78);
+                $("#packLenght").val(0.499);
+                break;
+            case "4":
+                $("#packLabel").val("FENIX 5B PLUS");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.78);
+                $("#packLenght").val(0.717);
+                break;
+            case "5":
+                $("#packLabel").val("FENIX 4B GLASS");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.78);
+                $("#packLenght").val(0.499);
+                break;
+            case "6":
+                $("#packLabel").val("FENIX 5B GLASS");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.78);
+                $("#packLenght").val(0.717);
+                break;
+            case "7":
+                $("#packLabel").val("ASIATICO 4B");
+                $("#packWidth").val(0.493);
+                $("#packHeight").val(0.128);
+                $("#packLenght").val(0.483);
+                break;
+            case "8":
+                $("#packLabel").val("HORUS 4B");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.917);
+                $("#packLenght").val(0.499);
+                break;
+            case "9":
+                $("#packLabel").val("HORUS 5B");
+                $("#packWidth").val(0.577);
+                $("#packHeight").val(0.917);
+                $("#packLenght").val(0.717);
+                break;
+            case "10":
+                $("#packLabel").val("MASTER 4B");
+                $("#packWidth").val(0.63);
+                $("#packHeight").val(0.83);
+                $("#packLenght").val(0.507);
+                break;
+            case "11":
+                $("#packLabel").val("MASTER 5B");
+                $("#packWidth").val(0.63);
+                $("#packHeight").val(0.83);
+                $("#packLenght").val(0.722);
+                break;
+            case "12":
+                $("#packLabel").val("TOP GLASS 4B");
+                $("#packWidth").val(0.523);
+                $("#packHeight").val(0.723);
+                $("#packLenght").val(0.478);
+                break;
+            case "13":
+                $("#packLabel").val("TOP GLASS 5B");
+                $("#packWidth").val(0.548);
+                $("#packHeight").val(0.732);
+                $("#packLenght").val(0.713);
+                break;
+            case "14":
+                $("#packLabel").val("COOKTOP POP 2B");
+                $("#packWidth").val(0.376);
+                $("#packHeight").val(0.192);
+                $("#packLenght").val(0.596);
+                break;
+            case "15":
+                $("#packLabel").val("COOKTOP POP 4B");
+                $("#packWidth").val(0.434);
+                $("#packHeight").val(0.128);
+                $("#packLenght").val(0.562);
+                break;
+            case "16":
+                $("#packLabel").val("COOKTOP POP 5B");
+                $("#packWidth").val(0.452);
+                $("#packHeight").val(0.133);
+                $("#packLenght").val(0.699);
+                break;
+            case "17":
+                $("#packLabel").val("LENHA CHAPA N0");
+                $("#packWidth").val(0.523);
+                $("#packHeight").val(0.591);
+                $("#packLenght").val(0.453);
+                break;
+            case "18":
+                $("#packLabel").val("LENHA CHAPA N1");
+                $("#packWidth").val(0.518);
+                $("#packHeight").val(0.576);
+                $("#packLenght").val(0.813);
+                break;
+            case "19":
+                $("#packLabel").val("LENHA CHAPA N2");
+                $("#packWidth").val(0.617);
+                $("#packHeight").val(0.576);
+                $("#packLenght").val(0.90);
+                break;
+            case "20":
+                $("#packLabel").val("LENHA VITRO N0");
+                $("#packWidth").val(0.523);
+                $("#packHeight").val(0.591);
+                $("#packLenght").val(0.453);
+                break;
+            case "21":
+                $("#packLabel").val("LENHA VITRO N1");
+                $("#packWidth").val(0.518);
+                $("#packHeight").val(0.576);
+                $("#packLenght").val(0.813);
+                break;
+            case "22":
+                $("#packLabel").val("LENHA VITRO N2");
+                $("#packWidth").val(0.617);
+                $("#packHeight").val(0.576);
+                $("#packLenght").val(0.90);
+                break;
+            default:
+                $("#packLabel").val("");
+                $("#packWidth").val("");
+                $("#packHeight").val("");
+                $("#packLenght").val("");
+                $("#packQuantity").val("");
+                
+        }
+    });    
+
     //submit the packages form to add the packs
     $("#packForm").submit(function (event) {
         event.preventDefault();
